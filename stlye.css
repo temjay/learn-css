@@ -1,0 +1,119 @@
+:root{
+    --black: #111111;
+    --haqua: #00ffff;
+    --shaqua: #01ffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    display: block;
+    color: aquamarine;
+    z-index: 0;
+}
+
+.container{
+    display: flex;
+}
+
+nav{
+    background-color: black;
+    z-index: 1000;
+    border-radius: 35px;
+    padding: 1rem;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    left: 15px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+
+}
+
+.link{
+    text-decoration: none;
+}
+
+#search-put{
+    background-color: var(--black);
+    border-radius: 10px;
+    border: none;
+    height: 27px;
+    color: whitesmoke;
+}
+
+#btnsearch{
+    background-color: aquamarine;
+    border-radius: 30px;
+    height: 26px;
+    width: auto;
+    border: none;
+    font-weight: bold;
+}
+
+#first-div{
+    background-color: var(--black);
+    display: grid;
+    padding: 20px;
+    margin-top: 5.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card{
+    background-color: black;
+    position: relative;
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.text-card{
+    background-color: none;
+    position: relative;
+    border-radius: 14px;
+}
+
+.head{
+    color: var(--haqua);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.subhead{
+    color: var(--shaqua);
+    position: absolute;
+    top: 35px;
+    left: 0px;
+}
+
+.icon{
+    color: aquamarine;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.call{
+    background-color: aquamarine;
+    color: var(--black);
+    border-radius: 999px;
+    border: none;
+    padding: 5px;
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    height: 40px;
+    width: 90px;
+}
